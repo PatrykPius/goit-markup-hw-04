@@ -70,7 +70,7 @@ button {
     display: flex;
     align-items: center;
     gap: 46px;
-    padding: 0 371px 0 93px;
+    padding: 0 345px 0 93px;
 }
 
 /* lub zamiast paddingu w .navflex mogę w <nav> dodać klasę
@@ -368,3 +368,4 @@ gap: 30px;
 border-radius: 0px 0px 4px 4px;
 }
 
+/* icons.svg */
