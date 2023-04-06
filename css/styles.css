@@ -57,11 +57,12 @@ button {
   color: var(--logo-web);
 }
 
-.text-header {
+/* .text-header {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
+} */
+
 .no-dots {
   list-style: none;
 }
@@ -81,9 +82,9 @@ button {
   padding: 0 371px 0 93px;
 } */
 
-.mail-head-style {
+/* .mail-head-style {
     margin-right: 50px;
-}
+} */
 
 .nav {
   text-decoration: none;
@@ -94,14 +95,35 @@ button {
   color: var(--active-color);
 }
 
-.header-contact {
+.header-contact-mail {
   color: var(--second-color);
   text-decoration: none;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-right: 50px;
 }
 
-.header-contact:hover,
-.header-contact:focus {
+.header-contact-phone {
+   color: var(--second-color);
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-contact-mail:is(:hover, :focus),
+.header-contact-phone:is(:hover, :focus) {
   color: var(--active-color);
+  fill: var(--active-color);
 }
 
 .hero {
@@ -220,11 +242,8 @@ button {
 }
 
 .portf-figcap {
-  /* border: 1px solid #EEEEEE;
-  border-top: none; */
-  border-left: 1px solid #EEEEEE;
-  border-bottom: 1px solid #EEEEEE;
-  border-right: 1px solid #EEEEEE;
+  border: 1px solid #EEEEEE;
+  border-top: none;
   margin-top: 0;
   padding: 24px 20px;
 }
@@ -236,7 +255,7 @@ button {
   font-weight: 700;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  width: 145px;
+  /* width: 145px; */
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -316,7 +335,8 @@ button {
 .headerstyle {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: flex-start;
 }
 
 .headerstyle-portfolio {
@@ -368,4 +388,53 @@ gap: 30px;
 border-radius: 0px 0px 4px 4px;
 }
 
-/* icons.svg */
+/* ICONS SVG DO DOPRACOWANIA */
+
+.icons-border {
+  display: flex;
+  justify-content: center;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  padding: 25px 100px;
+  /* background-size: 270px 120px; */
+margin-bottom: 30px;
+}
+/* OUR TEAM  */
+.social-description-links {
+  fill: #AFB1B8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+  /* width: 206px;
+  height: 56px; */
+  /* margin: 16px 32px 18px 32px; */
+}
+
+.team-social-links {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons {
+}
+
+.team-social-icons:is(:hover, :focus) {
+fill: #FFFFFF;
+background-color: #2196F3;
+border-radius: 50px;
+}
+
+.h2-our-clients {
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+}
