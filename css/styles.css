@@ -51,7 +51,7 @@ button {
   --svg-first-color: #FFFFFF;
   --svg-first-background-color: #2196F3;
   --svg-second-background-color: #F5F4FA;
-
+  --join-us: white;
 }
 
 .logo-header {
@@ -134,6 +134,7 @@ button {
 .hero {
   background-color: var(--first-background-color);
   color: var(--first-color);
+  background-image: ;
 }
 
 .heroflex {
@@ -426,9 +427,6 @@ margin-bottom: 30px;
   fill: #AFB1B8;
 }
 
-.social-icons {
-}
-
 .team-social-links:is(:hover, :focus) {
 fill: var(--svg-first-color);
 background-color: var(--svg-first-background-color);
@@ -468,3 +466,46 @@ fill: var(--icons-svg);
   fill:var(--active-color);
   border: 1px solid #2196f3;
 }
+
+.join-us {
+  color: var(--join-us);
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+}
+
+.join-us-social-icons {
+  fill: var(--svg-first-color);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.join-us-footer {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.join-us-div {
+width: 206px;
+height: 80px;
+margin-top: 12px;
+}
+
+.footer-flex {
+  display: flex;
+}
+
+.footer-address {
+  margin-right: 70px;
+}
+
+.portfolio-figure:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+
